@@ -1,0 +1,143 @@
+<nav class="navbar navbar-light bg-primary">
+  <div class="container-fluid">
+    <img id="image" src="favicon.ico">
+    <span class="navbar-text">
+      <h3>HetWeerInNederland.nl</h3>
+    </span>
+  </div>
+</nav>
+
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Location" id="locationInput"  aria-label="Recipient's username" aria-describedby="button-addon2">
+  <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="getCoordinates()">Search</button>
+</div>
+
+<div id="map"></div>
+
+<div>
+  <h2 id="subtitle">The weather for:  {{this.location}}</h2>
+</div>
+
+
+
+<div class="card-group" [hidden]="hidden">
+
+  <!--  Card 1-->
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{this.sevenDayForecast.day0}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{this.sevenDayForecast.date0}}</h6>
+
+      <div class="imageAndTemperature">
+        <img src="http://openweathermap.org/img/wn/{{this.sevenDayForecast.icon0}}@2x.png">
+        <h4>{{this.sevenDayForecast.daily_temp0}}&#8451;</h4>
+      </div>
+      <h4 style="text-align: center; margin-top: 0">{{this.sevenDayForecast.weather_description0}}</h4>
+
+
+      <div class="humidityAndWindSpeed">
+        <div>
+          <label style="color:grey;">Humidity</label>
+          <p>{{this.sevenDayForecast.humidity0}}%</p>
+        </div>
+        <div class="windspeed">
+          <label style="color: grey">Wind speed</label>
+          <p style="color: black">{{this.sevenDayForecast.wind_speed0}} m/s</p>
+        </div>
+      </div>
+      <a routerLink="/day0" class="stretched-link"></a>
+    </div>
+  </div>
+  <!--  Card 1-->
+
+  <!--  Card 2-->
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{this.sevenDayForecast.day1}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{this.sevenDayForecast.date1}}</h6>
+
+      <div class="imageAndTemperature">
+        <img src="http://openweathermap.org/img/wn/{{this.sevenDayForecast.icon1}}@2x.png">
+        <h4>{{this.sevenDayForecast.daily_temp1}}&#8451;</h4>
+      </div>
+      <h4 style="text-align: center; margin-top: 0">{{this.sevenDayForecast.weather_description1}}</h4>
+
+
+      <div class="humidityAndWindSpeed">
+        <div>
+          <label style="color:grey;">Humidity</label>
+          <p>{{this.sevenDayForecast.humidity1}}%</p>
+        </div>
+        <div class="windspeed">
+          <label style="color: grey">Wind speed</label>
+          <p style="color: black">{{this.sevenDayForecast.wind_speed1}} m/s</p>
+        </div>
+      </div>
+      <a routerLink="/day1" class="stretched-link"></a>
+    </div>
+  </div>
+
+  <!--  Card 2-->
+
+  <!--  Card 3-->
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{this.sevenDayForecast.day2}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{this.sevenDayForecast.date2}}</h6>
+
+      <div class="imageAndTemperature">
+        <img src="http://openweathermap.org/img/wn/{{this.sevenDayForecast.icon2}}@2x.png">
+        <h4>{{this.sevenDayForecast.daily_temp2}}&#8451;</h4>
+      </div>
+      <h4 style="text-align: center; margin-top: 0">{{this.sevenDayForecast.weather_description2}}</h4>
+
+
+      <div class="humidityAndWindSpeed">
+        <div>
+          <label style="color:grey;">Humidity</label>
+          <p>{{this.sevenDayForecast.humidity2}}%</p>
+        </div>
+        <div class="windspeed">
+          <label style="color: grey">Wind speed</label>
+          <p style="color: black">{{this.sevenDayForecast.wind_speed2}} m/s</p>
+        </div>
+      </div>
+      <a routerLink="/day2" class="stretched-link"></a>
+    </div>
+  </div>
+  <!--  Card 3-->
+
+  <!--  Card 4-->
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{this.sevenDayForecast.day3}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{this.sevenDayForecast.date3}}</h6>
+
+      <div class="imageAndTemperature">
+        <img src="http://openweathermap.org/img/wn/{{this.sevenDayForecast.icon3}}@2x.png">
+        <h4>{{this.sevenDayForecast.daily_temp3}}&#8451;</h4>
+      </div>
+      <h4 style="text-align: center; margin-top: 0">{{this.sevenDayForecast.weather_description3}}</h4>
+
+
+      <div class="humidityAndWindSpeed">
+        <div>
+          <label style="color:grey;">Humidity</label>
+          <p>{{this.sevenDayForecast.humidity3}}%</p>
+        </div>
+        <div class="windspeed">
+          <label style="color: grey">Wind speed</label>
+          <p style="color: black">{{this.sevenDayForecast.wind_speed3}} m/s</p>
+        </div>
+      </div>
+      <a routerLink="/day3" class="stretched-link"></a>
+    </div>
+  </div>
+
+  <!--  Card 4-->
+</div>
+
+<div>
+  <h2>Hello</h2>
+</div>

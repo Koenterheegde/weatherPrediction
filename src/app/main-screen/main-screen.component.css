@@ -1,0 +1,60 @@
+h3{
+  color: white;
+  font-family: Corbel;
+  font-weight: 10;
+  margin-bottom: 0;
+}
+
+label{
+  display: block;
+}
+
+.navbar{
+  padding-top: 2%;
+}
+
+.navbar-text{
+  padding: 0;
+}
+
+.container-fluid{
+  display: block;
+}
+
+.input-group{
+  margin-left: 10%;
+  margin-top: 5%;
+  max-width: 30%;
+}
+
+.card{
+  margin-left: 10%;
+  max-width: 20%;
+}
+
+.imageAndTemperature{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.humidityAndWindSpeed{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20%;
+}
+#map{
+  height: 60vh;
+  max-width: 80%;
+  margin: auto;
+}
+
+#subtitle{
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.windspeed{
+  margin-left: 20%;
+}

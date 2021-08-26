@@ -1,0 +1,18 @@
+h3{
+  color: white;
+  font-family: Corbel;
+  font-weight: 10;
+  margin-bottom: 0;
+}
+
+.navbar{
+  padding-top: 2%;
+}
+
+.navbar-text{
+  padding: 0;
+}
+
+.container-fluid{
+  display: block;
+}
